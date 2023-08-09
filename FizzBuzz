@@ -6,22 +6,20 @@ nameSpace FizzBuzz challenge
     {
         public string FizBiz(int number)
         {
+            var answer = "";
             //when the number is divisible by 3 return the word fizz
             if (number % 3 == 0)
             {
-                return "fizz";
+                answer = "fizz";
             }
             //when the number is divisible by 5 return the word buzz
             if (number % 5 == 0)
             {
-                return "buzz";
+                answer += "buzz";
             }
             //when the number is divisible by both, return the word fizzbuzz
-            if (number % 3 == 0) && (number % 5 ==0)
-            {
-                return "fizzbuzz";
-            }
+            return answer;
         }
-        return number;
+        
     }
 }
